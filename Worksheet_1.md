@@ -3,9 +3,11 @@
 ## Questions
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.)_ (Alice)
-
-Research Question: Which programs are more failure-prone than others? Which files/packages have defects (a classification problem)? Which are the files/packages with the most defects (a ranking problem)? Does complex code implify more defects?
-The goal is to support a allocation of resouces for quality assurance to parts of a system that are most defect-prone. Proove the hypothesis with complexity measures. Another goal is to provide their data to futur researches in software engineering. 
+The main goal is to find out which programs are more failure-prone than others. This information allows the allocation of resouces for quality assurance to the most defect-prone parts of a system. 
+In order to reach this goal, the authors of the paper examined the following research questions:
+..* Which files/packages have defects? 
+..* Which are the files/packages with the most defects? Does complex code implify more defects?
+Another goal is to support future empirical research based on bug data by making their Eclipse bug data set publicly available.
 
 2. Why is this paper **important**? (Sarah)
 
