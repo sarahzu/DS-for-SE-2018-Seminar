@@ -48,10 +48,27 @@ However, (not enough knowledge)
 ## Questions
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.) (Alice)
+
+
 2. Why is this paper **important**? (Sarah)
+
+With the help of defect prediction techniques the efforts of quality-assurance can be directed on the most defect-prone files. So the building of a good prediction model can lead to time and efford savings in software engineering. The understanding of such models is therefore an important aspect in the field of defect predition. 
+
 3. What is the **methodology** used to answer the research question(s) or reach the goal? (Alice)
+
+
 4. What **data** does the paper use? (Alice)
+
+
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
+
+
 6. What are the **limitations** of using this methodology on the results? (Alice)
+
+
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_(Sarah)
+
+
 8. What did you **not understand** of this paper?
+
+
