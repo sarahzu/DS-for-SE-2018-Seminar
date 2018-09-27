@@ -6,8 +6,8 @@
 
 The main goal is to find out which programs are more failure-prone than others. This information allows the allocation of resouces for quality assurance to the most defect-prone parts of a system. 
 In order to reach this goal, the authors of the paper examined the following research questions:
-..* Which files/packages have defects? 
-..* Which are the files/packages with the most defects? Does complex code implify more defects?
+* Which files/packages have defects? 
+* Which are the files/packages with the most defects? Does complex code implify more defects?
 Another goal is to support future empirical research based on bug data by making their Eclipse bug data set publicly available.
 
 2. Why is this paper **important**? (Sarah)
