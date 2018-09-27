@@ -4,7 +4,7 @@
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.)_ (Alice)
 
-Research Question: Which files/packages have defects (a classification problem)? Which are the files/packages with the most defects (a ranking problem)? Does complex code implify more defects?
+Research Question: Which programs are more failure-prone than others? Which files/packages have defects (a classification problem)? Which are the files/packages with the most defects (a ranking problem)? Does complex code implify more defects?
 The goal is to support a allocation of resouces for quality assurance to parts of a system that are most defect-prone. Proove the hypothesis with complexity measures. Another goal is to provide their data to futur researches in software engineering. 
 
 2. Why is this paper **important**? (Sarah)
@@ -23,8 +23,9 @@ Eclipse bug data set: They identified everything that was related to a bug and c
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
-Classification: recall, precision, accuracy
-Rankng: Spearman correlation (correleation between prediction and observed ranking)
+Classification: Classification is used to predict if a file or package will have at least one defect. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (combination of precision and recall) to check the quality of the classification model. 
+
+Rankng: The authors tried to order the files/packages, were files/packages with more defects come first, so they predict a ranking. To measure the quality of this ranking, they used Spearman correlation, which is the correleation between a prediction and an observed ranking. High correlation (high quality) is indicated with the value 1 or -1 and no correlation is indicated with value 0.
 
 6. What are the **limitations** of using this methodology on the results? (Alice)
 
