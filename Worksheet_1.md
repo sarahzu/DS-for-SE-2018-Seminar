@@ -35,7 +35,7 @@ How  applicable  are  models  across  projects  and  over time? How do we integr
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_ (Sarah)
 
-The experiments in this paper showed that the combination of complexity metrics can predict defects, suggesting that the more complex code it, the more defects it has.  
+The authors showed with their experiments that a combination of complexity metrics can predict defects. They suggest that more complex code contains most likely more defects.
 
 8. What did you **not understand** of this paper?
 
