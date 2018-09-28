@@ -27,7 +27,7 @@ Eclipse bug data set: They identified everything that was related to a bug and c
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
-Classification: Classification is used to predict if a file or package will have at least one defect. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (combination of precision and recall) to check the quality of the classification model. 
+Classification: Classification is used to predict if a file or package will have at least one defect. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) to check the quality of the classification model. 
 
 Rankng: The authors tried to order the files/packages, were files/packages with more defects come first, so they predict a ranking. To measure the quality of this ranking, they used Spearman correlation, which is the correleation between a prediction and an observed ranking. High correlation (high quality) is indicated with the value 1 or -1 and no correlation is indicated with value 0.
 
@@ -66,6 +66,7 @@ With the help of defect prediction techniques the efforts of quality-assurance c
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
+Classification is used to predict if a file is defect-prone. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum treshold on the probability value. The authors also used a threshold invariant method, called Receiver operating characteristic (ROC) which is a curve. The curve plots the true positive raes against false positive rates for all possible threshold (value between 0 and 1). To also take the cost of a bug-fix into account, the authors considered a cost effectivenesss measure. This measure predict defects and orders them according to their defect density.
 
 6. What are the **limitations** of using this methodology on the results? (Alice)
 
