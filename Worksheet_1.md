@@ -43,8 +43,7 @@ The authors showed with their experiments that a combination of complexity metri
 
 8. What did you **not understand** of this paper?
 
-There were some complex terms used that weren't explained in the paper: E.g. Nested block depth, Non-static fields, McCabe cyclomatic complexity ...
-However, (not enough knowledge)
+There were some complex terms used that weren't explained in the paper: E.g. Nested block depth, Non-static fields, McCabe cyclomatic complexity. This might be the case because we are not that knwoledgeable in that research field yet.
 
 
 # How, and Why, Process Metrics Are Better
@@ -66,7 +65,7 @@ With the help of defect prediction techniques the efforts of quality-assurance c
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
-Classification is used to predict if a file is defect-prone. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum treshold on the probability value. The authors also used a threshold invariant method, called Receiver operating characteristic (ROC) which is a curve. The curve plots the true positive raes against false positive rates for all possible threshold (value between 0 and 1). To also take the cost of a bug-fix into account, the authors considered a cost effectivenesss measure. This measure predict defects and orders them according to their defect density.
+Classification is used to predict if a file is defect-prone. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum treshold on the probability value. The authors also used a threshold invariant method, called Receiver Operating Characteristic (ROC) which models a curve. The curve plots the true positive rates against false positive rates for all possible thresholds (value between 0 and 1). To also take the cost of a bug-fix into account, the authors considered a cost effectivenesss measure. This measure predict defects and orders them according to their defect density.
 
 6. What are the **limitations** of using this methodology on the results? (Alice)
 
