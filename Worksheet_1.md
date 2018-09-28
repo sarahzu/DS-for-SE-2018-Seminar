@@ -56,7 +56,7 @@ However, (not enough knowledge)
 
 2. Why is this paper **important**? (Sarah)
 
-With the help of defect prediction techniques the efforts of quality-assurance can be directed on the most defect-prone files. So the building of a good prediction model can lead to time and efford savings in software engineering. The understanding of such models is therefore an important aspect in the field of defect prediction. Also, if you knwo which metrics are more effective in which situation, it helps you decide on the best metric for a specific project.
+With the help of defect prediction techniques the efforts of quality-assurance can be directed on the most defect-prone files. So the building of a good prediction model can lead to time and efford savings in software engineering. The understanding of such models is therefore an important aspect in the field of defect prediction. Also, if you know which metrics are more effective in which situation, it helps you decide on the best metric for a specific project.
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal? (Alice)
 
