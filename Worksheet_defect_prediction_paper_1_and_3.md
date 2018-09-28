@@ -65,7 +65,7 @@ With the help of defect prediction techniques the efforts of quality-assurance c
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
-Classification is used to predict if a file is defect-prone. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum treshold on the probability value. The authors also used a threshold invariant method, called Receiver Operating Characteristic (ROC) which models a curve. The curve plots the true positive rates against false positive rates for all possible thresholds (value between 0 and 1). To also take the cost of a bug-fix into account, the authors considered a cost effectivenesss measure. This measure predict defects and orders them according to their defect density.
+Classification is used to predict if a file is defect-prone. The authors presented precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum treshold on the probability value. The authors used a threshold invariant method, called Receiver Operating Characteristic (ROC) which models a curve. The curve plots the true positive rates against false positive rates for all possible thresholds (value between 0 and 1). The area under the curve  is abrevated as AUC. To also take the cost of a bug-fix into account, the authors considered a cost effectivenesss measure. This measure predict defects and orders them according to their defect density.
 
 The authors used the Spearman correlation (correleation between a prediction and an observed ranking) as a measure of stasis. With a resulting plot, it is possible to see how similiar files are between to successive releases.
 
@@ -74,7 +74,9 @@ The authors used the Spearman correlation (correleation between a prediction and
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_(Sarah)
 
+The results of the paper suggest that process metrics are more useful than code metrics on non-recurring defects (so for defect prediction in general) because code metrics do not evolve with the changing distribution of defects and therefore only focus on recurring defets.
 
-8. What did you **not understand** of this paper?
-The result of RQ 2 was not clear. Did they proof their hypothesis or not?
+8. What did you **not understand** of this paper? 
+
+The result of RQ 2 was not clear. Did they proof their hypothesis or not? Where is Figure 6b? We couldn't find this graphic in the paper. There also appeared some unexplained terms which we were not familiar with, for instance Wilcoxon Test or Benjamini-Hochberg correction.
 
