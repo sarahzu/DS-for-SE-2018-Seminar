@@ -56,7 +56,7 @@ They used some complex terms that weren't explained in the paper: E.g. Nested bl
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.) (Alice)
 
-The main goal of this paper is to throughfully examine the reason why process metrics are better than code metrics for defect prediciton. In order to reach this goal they investigated several research questions in which they compared code metrics with defect metrics.
+The main goal of this paper is to not only find out whether process metrics are better predictors than code metrics but also to throughfully examine the reason why process metrics are better. In order to reach this goal they investigated several research questions in which they compared code metrics with defect metrics regarding different aspects such as performance, stability, portability (cross-project prediction) and stasis.
 
 
 2. Why is this paper **important**? (Sarah)
@@ -65,9 +65,13 @@ With the help of defect prediction techniques the efforts of quality-assurance c
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal? (Alice)
 
+They conducted defect-predictions studies at file-level with predictive metrics that have already been used in defect prediction literature. To reduce the risk of dependence on a specific learning technique, they used many different learning techniques such as Logistic Regression, SCM, Naive Bayes, etc. However, they soley show the results from Logistic Regression in the paper with the justification that prediction performance depend mostly on the types of metrics and not on the learning technique.
+The models used for prediction are all binary classifiers which classify files as either defective or clean.
+To build the models they used both code and process metrics. They then trained the models on a release and evaluate its performance on the following release. To compare the stability and sensitivity they evaluated the model on all future releases. To examine the portability they evaluated models trained on one project on all releases of other projects.
 
 4. What **data** does the paper use? (Alice)
 
+They studied 12 Java-based projects which are maintained by Apache Software Foundation and use the JIRA issue tracking system. The projects have a diverse range of domains. The following data was extracted and used for the evaluation of the research questions: Commit history from GIT repository, defect information and fixing commits from JIRA and changed lines, author, etc. from GIT for each fixing commit.
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
@@ -77,6 +81,7 @@ The authors used the Spearman correlation (correleation between a prediction and
 
 6. What are the **limitations** of using this methodology on the results? (Alice)
 
+In the paper the authors mention the threats of validity of this study and explained how their used methodology tackle these threats. The main problem, we believe, is the generalizability of the results to other non-Apache projects which are developed in using another language than Java.
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_(Sarah)
 
