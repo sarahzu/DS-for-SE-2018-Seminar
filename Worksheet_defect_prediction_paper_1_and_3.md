@@ -39,7 +39,7 @@ Ranking: The authors tried to order the files/packages, were files/packages with
 
 6. What are the **limitations** of using this methodology on the results? (Alice)
 
-They found out that complexity metrics can predict defects, however, there might be other indicators that can better predict defects which have not been examined using this methodology. Additionally, the results do not show, whether if the models are applicable across projects and over time, since they solely used their own computed data set.
+They found out that complexity metrics can predict defects, however, there might be other indicators such as for example process properties that can better predict defects. These indicators which have not been examined with this methodology. Additionally, the results do not show, whether if the models are applicable across projects and over time, since they solely used their own computed data set.
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_ (Sarah)
 
@@ -55,6 +55,8 @@ They used some complex terms that weren't explained in the paper: E.g. Nested bl
 ## Questions
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.) (Alice)
+
+The main goal of this paper is to throughfully examine the reason why process metrics are better than code metrics for defect prediciton. In order to reach this goal they investigated several research questions in which they compared code metrics with defect metrics.
 
 
 2. Why is this paper **important**? (Sarah)
