@@ -4,7 +4,7 @@
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.)_ (Alice)
 
-The main goal is to find out which programs are more failure-prone than others. This information allows the allocation of resouces for quality assurance to the most defect-prone parts of a system. 
+The main goal is to find out which programs are more failure-prone than others. This information allows the allocation of resources for quality assurance to the most defect-prone parts of a system. 
 In order to reach this goal, the authors of the paper examined the following research questions:
 * Which files/packages have defects? 
 * Which are the files/packages with the most defects? Does complex code implify more defects?
@@ -19,23 +19,23 @@ The authors discovered that the combination of complexity metrics can predict de
 
 In the first step they computed the Eclipse bug data set (see question 4). Using this data set they conducted experiments in order to examine the research questions. 
 
-First, they computed the Spearman correlation between the number of pre-releases and post-release defects and the complextity metrics in the data set. Afterwards, they combined input features by building regression models for their data set. The regression models are used to predict whether files/packages have post-release defects. Lastly, they used linear regression models in order to predict files/packages which have the most post-release defects. The prediction of the ranking was compared to the actual ranking using the Spearman correlation.
+First, they computed the Spearman correlation between the number of pre-releases and post-release defects and the complexity metrics in the data set. Afterwards, they combined input features by building regression models for their data set. The regression models are used to predict whether files/packages have post-release defects. Lastly, they used linear regression models in order to predict files/packages which have the most post-release defects. The prediction of the ranking was compared to the actual ranking using the Spearman correlation.
 
 Each experiment was done on the file level as well as the package level.
  
-In order to predict the files/packages that have most post-release defects we used linear regression models. Using these models we predicted for each file/package the number of expected post-release defects and compared  the  resulting  ranking  to  the  observed  ranking using Spearman correlation.
+In order to predict the files/packages that have most post-release defects we used linear regression models. Using these models, we predicted for each file/package the number of expected post-release defects and compared  the  resulting  ranking  to  the  observed  ranking using Spearman correlation.
 
 4. What **data** does the paper use? (Alice)
 
 They computed the Eclipse bug data set based on data collected from version archives (CVS) and bug tracking systems (BUGZILLA): 
-To compute the data set they firstly identified everything that was related to a bug using the version archives and mapped bug reports to realeases with the bug tracking system. The bugs are then categorized into pre-release or post-release defects.
+To compute the data set they firstly identified everything that was related to a bug using the version archives and mapped bug reports to releases with the bug tracking system. The bugs are then categorized into pre-release or post-release defects.
 Additionally, for each case several complexity metrics were computed.
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
-Classification: Classification is used to predict if a file or package will have at least one defect. The authors used precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failor-prone files) to check the quality of the classification model. 
+Classification: Classification is used to predict if a file or package will have at least one defect. The authors used precision (how many of the found files were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failure-prone files) to check the quality of the classification model. 
 
-Rankng: The authors tried to order the files/packages, were files/packages with more defects come first, so they predict a ranking. To measure the quality of this ranking, they used Spearman correlation, which is the correleation between a prediction and an observed ranking. High correlation (high quality) is indicated with the value 1 or -1 and no correlation is indicated with value 0.
+Ranking: The authors tried to order the files/packages, were files/packages with more defects come first, so they predict a ranking. To measure the quality of this ranking, they used Spearman correlation, which is the correlation between a prediction and an observed ranking. High correlation (high quality) is indicated with the value 1 or -1 and no correlation is indicated with value 0.
 
 6. What are the **limitations** of using this methodology on the results? (Alice)
 
