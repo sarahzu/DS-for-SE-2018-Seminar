@@ -22,8 +22,6 @@ In the first step they computed the Eclipse bug data set (see question 4). Using
 First, they computed the Spearman correlation between the number of pre-releases and post-release defects and the complexity metrics in the data set. Afterwards, they combined input features by building regression models for their data set. The regression models are used to predict whether files/packages have post-release defects. Lastly, they used linear regression models in order to predict files/packages which have the most post-release defects. The prediction of the ranking was compared to the actual ranking using the Spearman correlation.
 
 Each experiment was done on the file level as well as the package level.
- 
-In order to predict the files/packages that have most post-release defects they used linear regression models. Using these models, they predicted for each file/package the number of expected post-release defects and compared  the  resulting  ranking  to  the  observed  ranking using Spearman correlation.
 
 4. What **data** does the paper use? 
 
