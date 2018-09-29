@@ -23,7 +23,7 @@ First, they computed the Spearman correlation between the number of pre-releases
 
 Each experiment was done on the file level as well as the package level.
  
-In order to predict the files/packages that have most post-release defects we used linear regression models. Using these models, we predicted for each file/package the number of expected post-release defects and compared  the  resulting  ranking  to  the  observed  ranking using Spearman correlation.
+In order to predict the files/packages that have most post-release defects they used linear regression models. Using these models, they predicted for each file/package the number of expected post-release defects and compared  the  resulting  ranking  to  the  observed  ranking using Spearman correlation.
 
 4. What **data** does the paper use? 
 
