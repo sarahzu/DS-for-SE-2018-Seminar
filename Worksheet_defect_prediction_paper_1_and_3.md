@@ -56,12 +56,12 @@ They used some complex terms that weren't explained in the paper: E.g. Nested bl
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.) (Alice)
 
-The main goal of this paper is to not only find out whether process metrics are better predictors than code metrics but also to throughfully examine the reason why process metrics are better. In order to reach this goal they investigated several research questions in which they compared code metrics with defect metrics regarding different aspects such as performance, stability, portability (cross-project prediction) and stasis.
+The main goal of this paper is to not only find out whether process metrics are better predictors than code metrics but also to thoughtfully examine the reason why process metrics are better. In order to reach this goal they investigated several research questions in which they compared code metrics with defect metrics regarding different aspects such as performance, stability, portability (cross-project prediction) and stasis.
 
 
 2. Why is this paper **important**? (Sarah)
 
-With the help of defect prediction techniques the efforts of quality-assurance can be directed on the most defect-prone files. So the building of a good prediction model can lead to time and efford savings in software engineering. The understanding of such models is therefore an important aspect in the field of defect prediction. Also, if you know which metrics are more effective in which situation, it helps you decide on the best metric for a specific project.
+With the help of defect prediction techniques the efforts of quality-assurance can be directed on the most defect-prone files. So the building of a good prediction model can lead to time and effort savings in software engineering. The understanding of such models is therefore an important aspect in the field of defect prediction. Also, if you know which metrics are more effective in which situation, it helps you decide on the best metric for a specific project.
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal? (Alice)
 
@@ -75,7 +75,7 @@ They studied 12 Java-based projects which are maintained by Apache Software Foun
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model? (Sarah)
 
-Classification is used to predict if a file is defect-prone. The authors presented precision (how many of the found fils were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failure-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum threshold on the probability value. The authors used a threshold invariant method, called Receiver Operating Characteristic (ROC) which models a curve. The curve plots the true positive rates against false positive rates for all possible thresholds (value between 0 and 1). The area under the curve  is abbreviated as AUC. To also take the cost of a bug-fix into account, the authors considered a cost effectiveness measure. This measure predict defects and orders them according to their defect density.
+Classification is used to predict if a file is defect-prone. The authors presented precision (how many of the found files were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failure-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum threshold on the probability value. The authors used a threshold invariant method, called Receiver Operating Characteristic (ROC) which models a curve. The curve plots the true positive rates against false positive rates for all possible thresholds (value between 0 and 1). The area under the curve  is abbreviated as AUC. To also take the cost of a bug-fix into account, the authors considered a cost effectiveness measure. This measure predict defects and orders them according to their defect density.
 
 The authors used the Spearman correlation (correlation between a prediction and an observed ranking) as a measure of stasis. With a resulting plot, it is possible to see how similar files are between to successive releases.
 
