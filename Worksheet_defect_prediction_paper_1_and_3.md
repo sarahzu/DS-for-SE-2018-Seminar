@@ -75,7 +75,7 @@ They studied 12 Java-based projects which are maintained by Apache Software Foun
 
 Classification is used to predict if a file is defect-prone. The authors presented precision (how many of the found files were failure-prone), recall (how many of all failure-prone files were found), accuracy (proportion of correct prediction of failure-prone files) and f-measure (harmonic mean of recall and precision) to check the quality of the classification model. However, these methods use a minimum threshold on the probability value. The authors used a threshold invariant method, called Receiver Operating Characteristic (ROC) which models a curve. The curve plots the true positive rates against false positive rates for all possible thresholds (value between 0 and 1). The area under the curve  is abbreviated as AUC. To also take the cost of a bug-fix into account, the authors considered a cost effectiveness measure. This measure predict defects and orders them according to their defect density.
 
-The authors used the Spearman correlation (correlation between a prediction and an observed ranking) as a measure of stasis. With a resulting plot, it is possible to see how similar files are between to successive releases.
+The authors used the Spearman correlation (correlation between a prediction and an observed ranking) as a measure of stasis. With a resulting plot, it is possible to see how similar files are between successive releases.
 
 6. What are the **limitations** of using this methodology on the results? 
 
