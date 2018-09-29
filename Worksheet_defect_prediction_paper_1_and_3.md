@@ -89,5 +89,5 @@ The results of the paper suggest that process metrics are more useful than code 
 
 8. What did you **not understand** of this paper? 
 
-The result of RQ 2 was not clear. Did they proof their hypothesis or not? Where is Figure 6b? We couldn't find this graphic in the paper. There also appeared some unexplained terms which we were not familiar with, for instance Wilcoxon Test or Benjamini-Hochberg correction.
+The result of RQ 2 was not clear to us. We did not see if the authors proofed their hypothesis or not? We were kind of confused that the paper refered to Figure 6b but there was no figure in the paper with the corresponding number. There also appeared some unexplained terms which we were not familiar with, for instance Wilcoxon Test or Benjamini-Hochberg correction.
 
