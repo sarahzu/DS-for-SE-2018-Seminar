@@ -46,6 +46,7 @@ The study was only conducted within open source software development context. So
 In a email social network, only a few member are responsible for the majority of messages. The social network presents a small-world characteristic. There is a strong relationship the number of messages a user sends and the number of different users that respond to them. The number of activities on the mailing lists are strongly correlated with source code change activities. However they are lesser correlated with document change activities. Developers who commit changes have a more significant role in the email community, so non-developers play a less significant role. The importance of a person in a social network is correlated to his/her code change activity. 
 
 8. What did you **not understand** of this paper?
+
 We did not understand how the authors calculated the out-degree and in-degree. That's why we did not include these two measures in question 5.
 
 
