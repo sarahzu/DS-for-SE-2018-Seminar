@@ -11,8 +11,6 @@ The goal of this research was to study the relationship between communication an
 3) Finding out if there is a difference between developers and non-developers in the social network
 4) Finding out if the being the most active developer is correlated to having the highest status among developers
 
-resources and use the resulting data to study the relationship with C&C activities in open source projects. 
-
 2. Why is this paper **important**?
 
 Software development with a large-scale often faces the challenge of communication and coordination among their developers. The C&C activities are often complex and the effort put into building them is quit high. Therefore, to know how the C&C activities are related to the actual development processes may help companies to improve their C&C activities. Furthermore, it shows them how important it is to not only look at both sides individually, but to have both C&C activities and software development in mind while improving the whole system. This could lead to more productive C&C activities among the developers which will improves the code development. 
