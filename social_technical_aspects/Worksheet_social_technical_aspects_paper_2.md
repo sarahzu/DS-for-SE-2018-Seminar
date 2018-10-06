@@ -21,12 +21,12 @@ Unlike other existing papers, this paper study the effect of globally distribute
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
-For this study they focused as mentioned above on post-release failures of software development within the same company.
+For this study they focused as mentioned above on post-release failures of software development within the same company. Using the data mentioned in question 4, they examined the distributed development at multiple levels of separation
 
 4. What **data** does the paper use?
 
-To evaluate the hypothesis they used historical development data from the implementation of Windows Vista and information about post-release failures. The post-release failures were examined at the level of individual executables and libraries (binaries).
-They used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams.
+To evaluate the hypothesis they used historical development data from the implementation of Windows Vista and information about post-release failures. The post-release failures were examined at the level of individual executables and libraries.
+They used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams. The distribution of binaries were categorized into several geographic levels: Building, Cafeteria, Campus, Locality, Continent and World.
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
@@ -38,7 +38,8 @@ They used geographical and commit data and divided the Vista binaries into two c
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
-The results of this study indicate that there is a negligible difference in post-release failures when comparing components developed by collocated teams and components developed in a distributed fashion within the same company. Additionally, by controlling the confounding variable "number of developers working on a binary", they found that the difference becomes even less significant.
+The results of this study indicate that there is a negligible difference in post-release failures when comparing components developed by collocated teams and components developed in a distributed fashion within the same company. Additionally, by controlling the confounding variable "number of developers working on a binary", they found that the difference becomes even less significant. So, their hypothesis H1 could not be confirmed. Considering earlier works, the study showed that organizational differences are stronger indicators of quality than the geographical distribution. 
 
+As for the evaluation of the seconed hypothesis H2, they concluded that there is no discernible difference in the measured metrics (functions, cemplexity, churn size, edits, etc.) between distributed and collocated binaries.
 
 8. What did you **not understand** of this paper?
