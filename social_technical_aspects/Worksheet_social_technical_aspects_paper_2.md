@@ -25,7 +25,8 @@ For this study they focused as mentioned above on post-release failures of softw
 
 4. What **data** does the paper use?
 
-To evaluate the hypothesis they used historical development data from the implementation of Windows Vista and information about post-release failures. The post-release failures were examined at the level of individual executables and libraries (binaries). 
+To evaluate the hypothesis they used historical development data from the implementation of Windows Vista and information about post-release failures. The post-release failures were examined at the level of individual executables and libraries (binaries).
+They used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams.
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
