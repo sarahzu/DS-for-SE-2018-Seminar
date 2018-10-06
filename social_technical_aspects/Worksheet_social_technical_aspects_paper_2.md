@@ -20,8 +20,24 @@ It is important to thoughtfully examine the effects of globally distributed soft
 Unlike other existing papers, this paper study the effect of globally distributed software development within the same company, because they want to focus on the issues which are solely dependent of geographical distribution and no others such as for example expertise finding. Additionally, this paper focuses on post-release failures, because they can have a negative impact on company reputation and marketshare.
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
+
+
+
 4. What **data** does the paper use?
+
+
+
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
+
+
+
 6. What are the **limitations** of using this methodology on the results?
+
+
+
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
+
+
+
+
 8. What did you **not understand** of this paper?
