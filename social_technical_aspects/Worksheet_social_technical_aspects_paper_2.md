@@ -21,8 +21,10 @@ Unlike other existing papers, this paper study the effect of globally distribute
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
-For this study they focused as mentioned above on post-release failures of software development within the same company. They used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams. They examined the distributed development at multiple levels of geographical separation.
-Additionally, they examined the complexity and mainentance characteristics of distributed and collocated binaraires in order to see whether if there are differences that can influence the post-release quality. It is possible that this is a confounding variable.
+For this study they focused as mentioned above on post-release failures of software development within the same company. 
+Firstly, they used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams. The categorization was done in five different ways, each time using a different split of the geograpphic levels (see question 4). To evaluate the first hypothesis H1 they examined the distribution of the number of post-release failures per binary in both categories. The analysis was performed on all five different splits. 
+
+For the second hypothesis H2, they examined the complexity and mainentance characteristics of distributed and collocated binaraires (metrics such as functions, complexity, churn size, etc.) in order to see whether if there are differences that could influence the post-release quality. The effect of the metrics were evaluated with the spearman rank correlation of distribution level of binaries and the metrics (see question 5).
 
 
 4. What **data** does the paper use?
@@ -32,7 +34,13 @@ Using the people management software they got the geographical location of each 
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
+Mann-Whitney test: This non-parametric test was used in order to quantitatively measure the difference in means of the number of failures. Compared to the t-test, this test does not assume a normal distribution. Since the number of failures was not normally distributed, the authors have chosen the Mann-Whitney test.
 
+Linear regression: This approach was firstly used to examine the effect of distributed development on number of failures - the first model contained only the binary variable "distributed", the second  model additionally contained "number of developers". This approach allowed the authors to see the effects of distributed development while controlling the number of developers. Secondly, linear regression was used to examine the effect of the level of distribution on the number of failures of a binary. The level of distribution was encoded into five binary variables. 
+
+Spearman rank correlation: This correlation was used in order to check their assumption that less complex binaries were chosen for distrbuted development. Therefore, it correlated the distribution level of binaries with the code metrics.
+
+Logistic regression: This statistical model was used in order to evaluate the relationship of the development metrics with the distribution level. 
 
 6. What are the **limitations** of using this methodology on the results?
 
