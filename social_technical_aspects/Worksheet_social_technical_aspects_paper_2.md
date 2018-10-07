@@ -44,12 +44,16 @@ Logistic regression: This statistical model was used in order to evaluate the re
 
 6. What are the **limitations** of using this methodology on the results?
 
+The paper focused on post-release failures, since it can have a huge negative impact on company reputation and marketshare. However, we think that code quality cannot be solely represented by post-release failures. It would be interesting to see whether the results of this study also apply to for example pre-release failures, which can also be costly.
 
+Also, the paper examined the post-release failures of distributed development which are solely within the same company. So, it is possible that the results are not generalizable to projects which are not within the same company, but outsourced. We believe that there are many factors of outsourcing (e.g. different communication issues due to the usage of different channels) which can have a negative influence on the code quality of distributed development.
+
+The size of the project which has been examined must also be taken into account. They only examined one large project, so it is unclear whether the same conclusions could be drawn on smaller projects which has different development processes. This leads to a possible further research: Do different development processes of distributed development projects lead to different code quality?
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
 The results of this study indicate that there is a negligible difference in post-release failures when comparing components developed by collocated teams and components developed in a distributed fashion within the same company. Additionally, by controlling the confounding variable "number of developers working on a binary", they found that the difference becomes even less significant. So, their hypothesis H1 could not be confirmed. Considering earlier works, the study showed that organizational differences are stronger indicators of quality than the geographical distribution. 
 
-As for the evaluation of the seconed hypothesis H2, they concluded that there is no discernible difference in the measured metrics (functions, cemplexity, churn size, edits, etc.) between distributed and collocated binaries.
+As for the evaluation of the seconed hypothesis H2, they concluded that there is no discernible difference in the measured metrics between distributed and collocated binaries.
 
 8. What did you **not understand** of this paper?
