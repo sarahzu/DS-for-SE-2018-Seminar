@@ -21,12 +21,14 @@ Unlike other existing papers, this paper study the effect of globally distribute
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
-For this study they focused as mentioned above on post-release failures of software development within the same company. Using the data mentioned in question 4, they examined the distributed development at multiple levels of separation
+For this study they focused as mentioned above on post-release failures of software development within the same company. They used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams. They examined the distributed development at multiple levels of geographical separation.
+Additionally, they examined the complexity and mainentance characteristics of distributed and collocated binaraires in order to see whether if there are differences that can influence the post-release quality. It is possible that this is a confounding variable.
+
 
 4. What **data** does the paper use?
 
-To evaluate the hypothesis they used historical development data from the implementation of Windows Vista and information about post-release failures. The post-release failures were examined at the level of individual executables and libraries.
-They used geographical and commit data and divided the Vista binaries into two cateogries: Binaries developed by distributed teams and binaries developed by collocated teams. The distribution of binaries were categorized into several geographic levels: Building, Cafeteria, Campus, Locality, Continent and World.
+They used data of the Windows Vista commorcial software project which involved a few thousand developers and consisted of thousand of files which contained machine code. The three main properties used were code quality, geographical location and code ownership. The code quality is represented by post-release failures which were examined at the level of individual executables and libraries. 
+Using the people management software they got the geographical location of each developer at Microsoft. The following geographic levels were used: Building, Cafeteria, Campus, Locality, Continent and World. The code ownership was examined by using the the number of commits made by each developer to each binary.
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
