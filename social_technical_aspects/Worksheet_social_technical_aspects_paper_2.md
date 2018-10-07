@@ -57,3 +57,5 @@ The results of this study indicate that there is a negligible difference in post
 As for the evaluation of the second hypothesis H2, they concluded that there is no discernible difference in the measured metrics between distributed and collocated binaries.
 
 8. What did you **not understand** of this paper?
+
+The paper explained the steps they did very well, so there wasn't anything we could not understand at all. However, for some used statistical methods (e.g. Spearman correlation) we had to do some research to fully understand why they were choosen and what they are used for exactly.
