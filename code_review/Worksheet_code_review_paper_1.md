@@ -9,12 +9,12 @@ This paper aims to explore aspects of contemporary peer review in software proje
 "_How do the parameters of peer review differ in multiple disparate projects?_"
 
 The following parameters of review were considered:
-1) What peer review process (e.g., Fagan inspection vs Commit-then-review) does the project use?
-2) How long do reviews take and how often are reviews performed?
-3) What is the size of artifact under review?
-4) How many people are involved in review?
-5) How eﬀective is review in terms of problems discussed?
-6) Does review spread knowledge about the system across the development team?
+* _What peer review process (e.g., Fagan inspection vs Commit-then-review) does the project use?_
+* _How long do reviews take and how often are reviews performed?_
+* What is the size of artifact under review?_
+* _How many people are involved in review?_
+* _How eﬀective is review in terms of problems discussed?_
+* _Does review spread knowledge about the system across the development team?_
 
 2. Why is this paper **important**?
 
