@@ -4,7 +4,7 @@
 
 1. What is the **main research question/goal**? _(there may be more than one, but usually there is an overarching research question/goal.)_
 
-The author’s goal was to research the relationship between modern code review processes and software quality. To be more precise, they analyse the relationship between software quality and two separate aspects: Code review coverage (how much changes have been code reviewed) and code review participation (how many reviewer where involved). They formulated two research questions:
+The author’s goal was to research the relationship between modern code review processes and software quality. To be more precise, they analyse the relationship between software quality and two separate aspects: Code review coverage (how much code changes have been reviewed) and code review participation (how many reviewers where involved and how did they proceed in the reviewing process). They formulated two research questions:
 
 RQ1: Does a relationship between code review coverage and post-release defects exist?
 
