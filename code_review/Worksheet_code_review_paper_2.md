@@ -7,6 +7,7 @@
 The author’s goal was to research the relationship between modern code review processes and software quality. To be more precise, they analyse the relationship between software quality and two separate aspects: Code review coverage (how much changes have been code reviewed) and code review participation (how many reviewer where involved). They formulated two research questions:
 
 RQ1: Does a relationship between code review coverage and post-release defects exist?
+
 RQ2: Does a relationship between code review participation and post-release defects exist?
 
 2. Why is this paper **important**?
@@ -29,11 +30,17 @@ They used code review data which was extracted from the Gerrit review database o
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
 Product metrics: For this metric the complexity (measured with Scitools Understand) is divided by  the size of a component (part of the source code with the same tag).
+
 Process metrics: This metric measures the change activity of a new release. It takes the time period and development branch into account and uses prior defects, churn (total number of lines added and removed), and change entropy (distribution of change process complexity across files) to calculate how the process has changed. 
+
 Human factors: This metric measures the developers code ownership as well as his/her expertise in respect to a period of time.
+
 Log transformation: Can only be used on natural numbers. This transformation takes a value x and processes it in the following formula: log(x + 1). Similarly a Logit Transformation uses the formula log(x / 1 - x). 
+
 Variance Inflation Factor: correlation measure, where a value of 1 means no correlation and a value greater than 1 means that collinearity exists.
+
 Predicted Defect Count: Number of defects the model estimated to be within the component.
+
 Concrete Predicted Defect Count: Predicted Defect Count except that the value cannot be zero. 
 
 6. What are the **limitations** of using this methodology on the results?
