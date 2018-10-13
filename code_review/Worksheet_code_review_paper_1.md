@@ -25,6 +25,17 @@ Studies have shown that traditional review practices limit software adoption and
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
+They used Yin’s multiple cases study methodology. So, they analysed each case separately, and tried to find patterns of similarity or difference. Analytical generalizations can be made from the findings which helps the researchers to develop a theory or a framework of findings.  In this paper the researchers developed a framework that describes the convergent and divergent practices of contemporary peer reviews. 
+
+Data Extraction: 
+They used different ways to extract the required data from the various projects that were investigated, because each of the project used different peer reviewing tools. How the data was extracted in each project is described in question 4.
+
+Plotting Data:
+To visualize their data and ease the comparison, they used beanplots and boxplots:
+*Beanplot: Used to show the distribution density for multiple samples along the y-axis and the medians (represented by horizontal lines). For this paper, this plot was used for the distribution density of number of reviews, review intervals, number of lines changed and of files seen.
+*Boxplot: Used for smaller ranges of non-normal data and shows the quartiles and median (bold line inside the box). The authors used these plots for count data that is highly concentrated: Reviewers per review, comments per review and number of resubmissions per review. 
+
+In order to answer the question _”Does review spread knowledge about the system across the development team?”_ they tried to provide a preliminary measurement of knowledge sharing. In addition to the already developed measure “number of files a developer has modified” (submitted), they also measured “number of files a developer has reviewed” (reviewed) and “number of files he knows about” (submitted ∪ reviewed). They then used a beanplot to compare the number of files a developer has modified and the total number of files he/she knows about to check for each project by how much reviews increase the number of files a developer knows about in the medium case.
 
 
 4. What **data** does the paper use?
