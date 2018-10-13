@@ -13,11 +13,11 @@ RQ2: Does a relationship between code review participation and post-release defe
 2. Why is this paper **important**?
 
 Other prior works had shown that code inspections are an effective method to identify defects. With code reviews it is possible to detect defects at an early stage in the development process and this furthermore reduces defects that may occur later on because of earlier defects. 
-The knowledge about the relationship between software quality and  review coverage/ participation will give the developers a better understanding about modern code review techniques and what elements of a code review process should not be omitted to receive good results. This may also encourage project managers to invest more in code review to achieve better code quality.
+The knowledge about the relationship between software quality and  review coverage/ participation will give the developers a better understanding about modern code review techniques and what elements of a code review process should not be omitted to receive good results. This may also encourage project managers to invest more in code reviewing to achieve better code quality.
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
-The authors have done a case study to answer their research questions. The case study was performed on large, successful and rapidly-evolving open source systems with globally distributed development teams. The authors defined two restrictions for the systems they wanted to study: 1. the systems had to have a large number reviewed integrated patches. 2. the code review process had to be traceable. They focused on Qt, VTK and ITK systems, which are all using the Gerrit code review tool and do not violate the restrictions. 
+The authors have done a case study to answer their research questions. The case study was performed on large, successful and rapidly-evolving open source systems with globally distributed development teams. The authors defined two restrictions for the systems they wanted to study: 1. The systems had to have a large number reviewed integrated patches. 2. The code review process had to be traceable. They focused on Qt, VTK and ITK systems, which are all using the Gerrit code review tool and do not violate the restrictions. 
 
 They extracted the review data from the Gerrit review database, got the Gerrit change Ids form the VCS commits and calculated the version control metrics. For the calculation, they took VCS commit messages and searched for defect identifiers. They used multiple metrics (product metrics, process metrics and human factors) to measure their data. 
 
@@ -37,21 +37,21 @@ Process metrics: This metric measures the change activity of a new release. It t
 
 Human factors: This metric measures the developers code ownership as well as his/her expertise in respect to a period of time.
 
-Log transformation: Can only be used on natural numbers. This transformation takes a value x and processes it in the following formula: log(x + 1). Similarly a Logit Transformation uses the formula log(x / 1 - x). 
+Log transformation: Can only be used on natural numbers. This transformation takes a value x and processes it in the following formula: log(x + 1). Similarly a Logit Transformation uses the following formula: log(x / 1 - x). 
 
-Variance Inflation Factor: correlation measure, where a value of 1 means no correlation and a value greater than 1 means that collinearity exists.
+Variance Inflation Factor: Correlation measure, where a value of 1 means no correlation and a value greater than 1 means that collinearity exists.
 
 Predicted Defect Count: Number of defects the model estimated to be within the component.
 
 Concrete Predicted Defect Count: Predicted Defect Count except that the value cannot be zero. 
 
-Code review coverage metrics: proportion of reviews changes in the past and proportion of reviewed churns in the past. 
+Code review coverage metrics: proportion of reviewed changes in the past and proportion of reviewed churns in the past. 
 
 Participation metrics: proportion of changes only approved by the author himself, proportion of hastily code reviews and the proportion of non-discussed changes to a component. 
 
 6. What are the **limitations** of using this methodology on the results?
 
-The criteria for the used systems were very strict, therefore only three open source systems were used for their study, so the study is not enough representative. Furthermore, the systems they analysed where large, successful and rapidly-evolving open source systems. Small and not very successful projects are not represented. One could argue, that the shown effects and relationships only appear, because the systems are very big and successful. 
+The criteria for the used systems were very strict, therefore only three open source systems were used for their study, so the study is not sufficiently representative for general open source software in our point of view. Furthermore, the systems they analysed where large, successful and rapidly-evolving open source systems. Small and not very successful projects are not represented. One could argue, that the shown effects and relationships only appear, because the systems are very big and successful. 
 
 The models are build with the assumption that every post release has the same weight, however, in real life it is mostly the case that some post-release defects are more severe than other defects. So it is not clear if the defects used in the study were only relatively small defects or major ones. Depending on the usage of the findings of the paper, this piece of information is very important. 
 
