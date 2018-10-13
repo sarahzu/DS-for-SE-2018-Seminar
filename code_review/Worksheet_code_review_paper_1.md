@@ -18,8 +18,13 @@ The following parameters of review were considered:
 
 2. Why is this paper **important**?
 
+Peer review refers to the practice of other authors inspecting software code. It is performed to find errors/defects and improve the overall quality of the software. In addition to this, peer review has many other advantages, as for example sharing knowledge and team cohesion. So, it is important to thoughtfully explore this practice and find efficient methods. 
+
+Studies have shown that traditional review practices limit software adoption and review efficiency. The traditional review practices evolved over time to contemporary peer reviews which follow less rigid practices. This paper is important since it is one of the first studies that explores aspects of contemporary peer review. If they find similar peer review practices which evolved in different projects, then these practices may represent successful and efficient review methods. Using this knowledge it will be possible to make suggestions for other software projects on how to perform efficient peer review.
+
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
+
 
 
 4. What **data** does the paper use?
