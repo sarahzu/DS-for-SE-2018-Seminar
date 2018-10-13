@@ -21,7 +21,7 @@ The authors have done a case study to answer their research questions. The case 
 
 They extracted the review data from the Gerrit review database, got the Gerrit change Ids form the VCS commits and calculated the version control metrics. For the calculation, they took VCS commit messages and searched for defect identifiers. They used multiple metrics (product metrics, process metrics and human factors) to measure their data. 
 
-With this data, they build Multiple Linear Regression (MLR) models to help them understand the relationship between post-release defects and code review coverage/participation. To make the model less vulnerable to outliers, they performed a log transformation and minimised multicollinearity with the help of Spearman ranks and Variance Inflation Factor scores. To better interpret the MLR model, the authors used explanatory variable impact analysis including the calculation of the predicted defect count and concrete predicted defect count. 
+With this data, they build Multiple Linear Regression (MLR) models to help them understand the relationship between post-release defects and code review coverage/participation. To make the model less vulnerable to outliers, they performed a log transformation and minimised multicollinearity with the help of Spearman ranks and Variance Inflation Factor scores. The authors used Akaike Information Criterion and the Adjusted R2 to evaluate how good their model was and used explanatory variable impact analysis including the calculation of the predicted defect count and concrete predicted defect count to better interpret the MLR model.
 
 Finally, they added the code review coverage metric and the the participation metrics to the MLR model. This finalised model could then be used to draw their conclusions.
 
@@ -66,4 +66,4 @@ So to sum up, if modern code review lacks enough code coverage and participation
 
 8. What did you **not understand** of this paper?
 
-This paper used a lot of statistical metrics. Even though the different metrics were explained in the paper, we had some difficulties to draw the connection between these metrics. We are not sure if we understood each metric 100% correctly even after doing some research. 
+This paper used a lot of statistical metrics. Even though the different metrics were explained in the paper, we had some difficulties to draw the connection between these metrics. We are not sure if we understood each metric 100% correctly even after doing some research. There were two metrics were we did not understand how they worked: Akaike Information Criterion and the Adjusted R2. Because of this we did not include these metrics in question 5. 
