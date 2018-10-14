@@ -40,6 +40,12 @@ In order to answer the question _”Does review spread knowledge about the syste
 
 4. What **data** does the paper use?
 
+To explore their research question, the data was extracted data from different projects. Since the projects used different methods and tools for their reviews, the authors had to use different ways to extract the data from each project:
+* Lucent (comparison data): They collected self-report data from reviewers on a compiler project by attending inspection meetings. 
+* 6 OSS projects (comparison data): Review data of Apache, Subversion, Linux, FreeBSD, KDE and Gnome was extracted form mailing lists.
+* Microsoft data (new data): They extracted the data from the CodeFlow tool which centrally stores all data about code reviews by building a service to mine the required information: Who created the review, which are the modified files, how many changes were submitted, comments of reviewers, who signed off.
+* Google Chrome and Android (new data): From these projects they gathered information about authors and reviewer’s activity, files changed, comments made and dates of submission and completion by querying the Gerrit servers. 
+* AMD (new data): They extracted a summary of the data from the used CodeCollaborator tool. The problem of this data was, that it didn’t contain all the required parameters of review for the exploration. For example, the number of comments per review was missing.
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
