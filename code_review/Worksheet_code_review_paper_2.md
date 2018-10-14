@@ -23,7 +23,7 @@ They extracted the review data from the Gerrit review database, got the Gerrit c
 
 With this data, they build Multiple Linear Regression (MLR) models to help them understand the relationship between post-release defects and code review coverage/participation. To make the model less vulnerable to outliers, they performed a log transformation and minimised multicollinearity with the help of Spearman ranks and Variance Inflation Factor scores. The authors used Akaike Information Criterion and the Adjusted R2 to evaluate how good their model was and used explanatory variable impact analysis including the calculation of the predicted defect count and concrete predicted defect count to better interpret the MLR model.
 
-Finally, they added the code review coverage metric and the the participation metrics to the MLR model. This finalised model could then be used to draw their conclusions.
+Finally, they added the code review coverage metric and the participation metrics to the MLR model. This finalised model could then be used to draw their conclusions.
 
 4. What **data** does the paper use?
 
@@ -53,7 +53,7 @@ Participation metrics: proportion of changes only approved by the author himself
 
 The criteria for the used systems were very strict, therefore only three open source systems were used for their study, so the study is not sufficiently representative for general open source software in our point of view. Furthermore, the systems they analysed where large, successful and rapidly-evolving open source systems. Small and not very successful projects are not represented. One could argue, that the shown effects and relationships only appear, because the systems are very big and successful. 
 
-The models are build with the assumption that every post release has the same weight, however, in real life it is mostly the case that some post-release defects are more severe than other defects. So it is not clear if the defects used in the study were only relatively small defects or major ones. Depending on the usage of the findings of the paper, this piece of information is very important. 
+The models are built with the assumption that every post release has the same weight, however, in real life it is mostly the case that some post-release defects are more severe than other defects. So it is not clear if the defects used in the study were only relatively small defects or major ones. Depending on the usage of the findings of the paper, this piece of information is very important. 
 
 The time spend on reviews could not be measured exactly therefore the authors had to rely on heuristics. This however is a thread to validity, because if the result is not exactly measured the whole calculation gets imprecise. This fact must be considered when someone wants to use the findings of the study to improve their development process.
 
