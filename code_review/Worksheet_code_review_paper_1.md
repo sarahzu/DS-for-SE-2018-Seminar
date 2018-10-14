@@ -61,6 +61,16 @@ We did not find any specific statistical model that was used. In order to report
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
+The authors found that there were some minor divergences in contemporary practice. However, their similarities (converging practices) outweighed the differences (divergences). 
+
+The following convergent contemporary peer review practices have been found:
+1) Contemporary review is performed regularly and quickly just before the code is committed.
+2) Contemporary review usually involves two reviewers, but can vary depending on the complexity of change.
+3) Contemporary reviewers prefer discussion and ﬁxing code over reporting defects.
+4) Tool supported review provides the beneﬁts of traceability, when compared to email-based review, and can record implicit measures, when compared to traditional inspection. The rise in adoption of review tools provides an indicator of success.
+
+Additionally, they developed a new measure of the degree to which reviews spreads knowledge across the development team. This measure provides a quantiﬁcation of knowledge spread that has previously only had experiential support.
+
 
 8. What did you **not understand** of this paper?
 
