@@ -69,8 +69,9 @@ The following convergent contemporary peer review practices have been found:
 3) Contemporary reviewers prefer discussion and ﬁxing code over reporting defects.
 4) Tool supported review provides the beneﬁts of traceability, when compared to email-based review, and can record implicit measures, when compared to traditional inspection. The rise in adoption of review tools provides an indicator of success.
 
-Additionally, they developed a new measure of the degree to which reviews spreads knowledge across the development team. This measure provides a quantiﬁcation of knowledge spread that has previously only had experiential support.
+Additionally, they developed a new measure of the degree to which reviews spreads knowledge across the development team which quantifies the knowledge spread. Using this measure to explore the projects they found that review increases the number of distinct ﬁles a developer knows about by 66% to 150% depending on the project. 
 
 
 8. What did you **not understand** of this paper?
 
+Since the contemporary projects did not record the number of defects found during review the authors defined three alternative measures of review effectiveness. We did not fully understand how exactly they came up with these alternative measures and why they believe these measures provide an approximations of review effectiveness. 
