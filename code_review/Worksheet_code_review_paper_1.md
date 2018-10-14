@@ -11,7 +11,7 @@ This paper aims to explore aspects of contemporary peer review in software proje
 The following parameters of review were considered:
 * _What peer review process (e.g., Fagan inspection vs Commit-then-review) does the project use?_
 * _How long do reviews take and how often are reviews performed?_
-* What is the size of artifact under review?_
+* _What is the size of artifact under review?_
 * _How many people are involved in review?_
 * _How eﬀective is review in terms of problems discussed?_
 * _Does review spread knowledge about the system across the development team?_
@@ -32,8 +32,8 @@ They used different ways to extract the required data from the various projects 
 
 Plotting Data:
 To visualize their data and ease the comparison, they used beanplots and boxplots:
-*Beanplot: Used to show the distribution density for multiple samples along the y-axis and the medians (represented by horizontal lines). For this paper, this plot was used for the distribution density of number of reviews, review intervals, number of lines changed and of files seen.
-*Boxplot: Used for smaller ranges of non-normal data and shows the quartiles and median (bold line inside the box). The authors used these plots for count data that is highly concentrated: Reviewers per review, comments per review and number of resubmissions per review. 
+* Beanplot: Used to show the distribution density for multiple samples along the y-axis and the medians (represented by horizontal lines). For this paper, this plot was used for the distribution density of number of reviews, review intervals, number of lines changed and of files seen.
+* Boxplot: Used for smaller ranges of non-normal data and shows the quartiles and median (bold line inside the box). The authors used these plots for count data that is highly concentrated: Reviewers per review, comments per review and number of resubmissions per review. 
 
 In order to answer the question _”Does review spread knowledge about the system across the development team?”_ they tried to provide a preliminary measurement of knowledge sharing. In addition to the already developed measure “number of files a developer has modified” (submitted), they also measured “number of files a developer has reviewed” (reviewed) and “number of files he knows about” (submitted ∪ reviewed). They then used a beanplot to compare the number of files a developer has modified and the total number of files he/she knows about to check for each project by how much reviews increase the number of files a developer knows about in the medium case.
 
@@ -53,6 +53,11 @@ We did not find any specific statistical model that was used. In order to report
 
 6. What are the **limitations** of using this methodology on the results?
 
+* As mentioned above, they studied many different projects which used different review tools and processes. So, the extracted data from these projects are not controlled and may have many confounding variables such as for example incentives for reviews or tools used. Even though the authors attempted to clean the data by using similar measures, we still have to take note that the data was collected differently in each project. Therefore, comparisons should be made with caution.
+*	The datasets of AMD and Lucent weren’t complete as they could only use a summary and not the raw data. They were missing some data that were required for the comparisons, which limits the validity of the findings.
+*	To find the convergent/divergent practices they compared, as mentioned in question 3, the medians of the review parameters. However, they did not use any statistical tests to check if the observed differences between the traditional software inspection (e.g. Lucent) and the contemporary peer review practices were statistically significant. 
+*	We think that the used measure of knowledge sharing though peer review is not optimal and can still be improved, as this measure does not consider that if people review similar files, the knowledge shared through peer review is not as big as when people review totally different files. So, they only considered the number of the reviewed files and the number of files that have been modified but did not consider the content of the files that are reviewed. 
+*	In the threats to validity section they mentioned that when a ﬁnding was unusual they would read the associated reviews and discuss them with developers. They for example found that sometimes reviews are used for awareness purposes and removed these reviews from the projects. This seemed to us a bit biased, as they only that that for findings that were unusual. What if the findings that were “usual” also had issues in the data? 
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
