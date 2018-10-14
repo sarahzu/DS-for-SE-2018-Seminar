@@ -49,6 +49,7 @@ To explore their research question, the data was extracted data from different p
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
+We did not find any specific statistical model that was used. In order to report their findings, the authors solely compared and reported the processes and medians of each review parameter of the projects. The parameters that were compared between the projects to find the convergent practices were _review intervals, completion times, change sizes, number of reviews and knowledge spreading_.
 
 6. What are the **limitations** of using this methodology on the results?
 
