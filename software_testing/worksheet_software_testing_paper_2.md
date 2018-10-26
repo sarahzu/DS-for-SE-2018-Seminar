@@ -25,8 +25,11 @@ So the detection and automatic fixing of flaky tests is a very important and nee
 
 Firstly the authors defined the test smells they wanted to use, namely Resource Optimism, Indirect Testing and Test Run War. They decided on these three, because they are related to test flakiness. To collect the data (more detail about the data is covered in question 4), they cloned all the open-source software projects they wanted to use form GitHub, detected the test smells with a detection tool and identified if the test had a non-deterministic outcome. In a next step, the authors identified the flaky tests. To do so, they run the JUnit classes in each subject system for multiple times and checked the outcome of the tests for each run. If one outcome was different than the others, the test was identified as a flaky test. To find the right amount of iterations for this process, they empirically calibrated it on a different software system not used for the study. They concluded that ten would be a suitable amount of iterations. With this method, they found out, that 45% of the test methods they investigated were indeed flaky. 
 
+In order to check RQ1, the authors had to manually check each flaky test they found. Only then were they able to identify the root cause for the flakiness. They analysed the source code and the JUnit log reporting the thrown exceptions while running the test. They also separated the tests into ten categories of smell tests, to better distinguish their nature. 
 
+To investigate RQ2, the authors firstly had to determine which of the previously found flaky tests have also been affected by one the considered test smells. This procedure helped them to measure to what extend the two aspects appeared together. To do so, they used a new manual analysis process which measured in how many cases the test smells were related to the flakiness of the tests.
 
+In order to analyse RQ3 the authors manually analysed the source code of the test methods which were involved in a design problem. They furthermore performed refactoring operations on them. After this step, the test smells were removed from the source code. After the source code was cleaned by the test smells, they again performed the flaky test identification process. This procedure provided them with the information if refactoring operations does have an effect on test flakiness. 
 
 4. What **data** does the paper use?
 
@@ -45,4 +48,7 @@ The source code of 19’532 Unit test method which belong to 18 large open-sourc
 They found out that flaky tests are quite common and often contain one of the considered test smells . Also, more than the half of the found flaky tests contain a test code smell which caused the flakiness of the test. Additionally, the authors found out that it is possible to remove the design flaws by refactoring the test smells. Moreover, refactoring also fixed the flaky tests whose flakiness was caused by a test smell.
 
 8. What did you **not understand** of this paper?
+
+
+
 
