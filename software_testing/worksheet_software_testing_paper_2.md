@@ -25,7 +25,7 @@ Firstly the authors defined the test smells they wanted to use, namely Resource 
 
 In order to check RQ1, the authors had to manually check each flaky test they found. Only then were they able to identify the root cause for the flakiness. They analysed the source code and the JUnit log reporting the thrown exceptions while running the test. They also separated the tests into ten categories of smell tests, to better distinguish their nature. 
 
-To investigate RQ2, the authors firstly had to determine which of the previously found flaky tests have also been affected by one of the considered test smells. This procedure helped them to measure to what extend the two aspects appeared together. To do so, they used a new manual analysis process which measured in how many cases the test smells were related to the flakiness of the tests.
+To investigate RQ2, the authors firstly had to determine which of the previously found flaky tests have also been affected by one of the considered test smells. This procedure helped them to measure to what extend the two aspects appeared together. To do so, they used a new manual analysis process which measured in how many cases the test smells were related to the flakiness of the tests. Additionally, they used the Kendall rank correlation test to measure the strength of the relationship between test smells and flaky tests. 
 
 In order to analyse RQ3 the authors manually analysed the source code of the test methods which were involved in a design problem. They furthermore performed refactoring operations on them. After this step, the test smells were removed from the source code. After the source code was cleaned by the test smells, they again performed the flaky test identification process. This procedure provided them with the information if refactoring operations does have an effect on test flakiness. 
 
@@ -35,14 +35,19 @@ The source code of 19’532 Unit test method which belong to 18 large open-sourc
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
-There were no statistical models used. Most of the evaluations were done by manual inspections. 
+New manual analysis process: Measuring the number of occurrences were the presence of a test smell is related to the test flakiness. In more detail, this method includes the identification of the test smell instances related to the root cause of the previously identified flaky tests. So with this measure it is possible to directly map the characteristics of the test smell to the cause of the flakiness of the test.
+
+Kendall rank correlation: This measure measures the ordinal association between two quantities. If the two quantities have a similar rank, the Kendall’s coefficient is going to be high.  
 
 6. What are the **limitations** of using this methodology on the results?
 
+A lot of the measuring was done manually by the authors. This leads to the question of how precise the results from the measure was. Also, for the identification of the flaky tests, they used a tool which had not a 100% accuracy. Also, it is possible that the number of iterations they used were not enough to find all flaky tests. Therefore, it is possible that not all flaky tests in the observed programs were used for the study. Refactoring code can have a positive effect, but it can also lead to undesired effects which can lead to additional bugs. Even though the authors tested their refactored code, it remains possible that some refactoring could lead to unwanted behaviour of the code.  
 
+The project was conducted on 18 open-source projects. However, 13 out of these 18 projects belonged to the APACHE SOFTWARE FOUNDATION. So it is possible that some of the findings are only valid in projects that resemble Apache projects. Furthermore, only big open-source projects were analysed. We have no indication if the results are also valid vor small projects or commercial ones. Therefore, the findings of the paper have to be treated with caution when companies try to apply them to their own projects. They have to check if their software resembles some of the 18 observers open-source projects before they can discuss if the results are useful for their individual case.  
+Furthermore, only three types of test smells were analysed. However, there exist many more and the results of the paper do not apply to these test smells. This fact has to be kept in mind when using the results of the paper, because e.g. refactoring the code may remove flaky tests that were caused by one of the observed test smells, but it maybe could not  be possible to remove flaky tests that are caused by a test smell which was not analysed. So further research in this area is needed to widen the spectrum of usage. 
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
-They found out that flaky tests are quite common and often contain one of the considered test smells . Also, more than the half of the found flaky tests contained a test code smell which caused the flakiness of the test. Additionally, the authors found out that it is possible to remove the design flaws by refactoring the test smells. Moreover, refactoring also fixed the flaky tests whose flakiness was caused by one of their observed test smell.
+They found out that flaky tests are quite common (45% of their analysed tests were flaky) and often contain one of the considered test smells (61% of the analysed tests) . Also, more than the half of the found flaky tests (54% of the analysed tests) contained a test code smell which caused the flakiness of the test. Additionally, the authors found out that it is possible to remove the design flaws by refactoring the test smells (54% of the flaky tests were removed after refactoring). Moreover, refactoring also fixed the flaky tests whose flakiness was caused by one of the observed test smell.
 
 8. What did you **not understand** of this paper?
