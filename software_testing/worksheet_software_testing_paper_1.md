@@ -31,14 +31,13 @@ As mentioned in question 3, they used data collected from 416 software engineers
 
 _Participants_: 
 They attracted study participants using various methods: For example, they provided a high-profile project website, offered razzle prizes, delivered useful WatchDog functionalities such as feedback on development behaviour, wrote articles and blogs and gave presentations at conferences. The participants were most likely interested in testing because the researchers tried to put emphasis on the testing focus of the plugin to attract developers during the participant acquisition.
-The following demographics of the participants are known:
-* Country: The considered participants came from 68 different countries. The most of them were from the United States (25%). For the countries India, Netherlands, Germany and China they had about 5-7% participants from each country. For the 62 remaining countries had less than 5% participants each.
+* Country: The considered participants came from 68 different countries. The most of them were from the United States (25%).
 * Operating System: 75% of the participants use Windows, 14% MacOS and 11% Linux.
 * Programming experience: 60% users had less experience than 3 years. 20% were very experienced developers with more than or equal to 7 years of experience.
 
 _Testing Behaviour Data_: 
 The data they used for this study was collected from the 1. November 2014 to 1. March 2015. In total they observed 24,255 hours of working time in Eclipse in the 460 projects that were registered. Student data were analysed separately and data from deprecated versions of WatchDog was filtered out. 
-Using listeners for UI events related to programming behaviour and testing, they collected in total 1’337’872 user actions (intervals) from the 416 participants. Intervals are grouped events and have a specific type (_EclipseOpen, Perspective, UserActive, JUnitExecution, Reading, Typing_) and start and end time. They were automatically sent to the server as a JSON stream, then stored in a NOSQL database. Each interval was enriched with further information: For example, a _Reading_ or _Typing_ interval additionally contained information about the number of code lines, the file name, and type of code: production or test code.
+Using listeners for UI events related to programming behaviour and testing, they collected in total 1’337’872 user actions (intervals) from the 416 participants. Intervals are grouped events and have a specific type (_EclipseOpen, Perspective, UserActive, JUnitExecution, Reading, Typing_) and start and end time. Each interval was enriched with further information which they used for the analysis: For example, a _Reading_ or _Typing_ interval additionally contained information about the number of code lines, the file name, and type of code: production or test code.
 
 _Survey Data_: 
 To collect initial data about the participants, they made them fill out a short survey when they registered as a user for WatchDog. This survey collected data about the participants programming expertise, their beliefs about their testing behaviour and which testing frameworks they employ. 
@@ -46,6 +45,9 @@ To collect initial data about the participants, they made them fill out a short 
 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
+For each test made in this study they firstly checked the distribution of the used data by performing a Shapiro-Wilk Normality test.  They performed non-parametric tests to investigate their research questions, because all distributions significantly deviated from a normal distribution according to the Shapiro-Wilk Normality tests.
+* Wilcoxon Rank Sum test: Done in order to check whether there is a significant statistical difference between two distributions.
+* Spearman rank-order correlation: Performed for correlation analyses.
 
 6. What are the **limitations** of using this methodology on the results?
 
