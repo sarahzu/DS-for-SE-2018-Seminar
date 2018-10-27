@@ -53,3 +53,5 @@ Furthermore, only three types of test smells were analysed. However, there exist
 They found out that flaky tests are quite common (45% of their analysed tests were flaky) and often contain one of the considered test smells (61% of the analysed tests). The most prominent cause for flaky tests are asynchronous waits, input-output issues, concurrency problems, test order dependency and network issues. Also, the half of the found flaky tests (54% of the analysed tests) contained a test code smell which caused the flakiness of the test. Additionally, the authors found out that it is possible to remove the design flaws by refactoring the test smells (54% of the flaky tests were removed after refactoring). Moreover, refactoring also fixed the flaky tests whose flakiness was caused by one of the observed test smell.
 
 8. What did you **not understand** of this paper?
+
+There was not much we did not understand in this paper. We had to do some further research to understand the Kendall rank correlation because it was unfortunately not explained in the paper. 
