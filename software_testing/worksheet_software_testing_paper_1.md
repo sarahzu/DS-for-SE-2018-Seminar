@@ -14,6 +14,13 @@ The main goal is to study how developers test in their IDE and to identify the h
 
 2. Why is this paper **important**?
 
+It is substantial to gain knowledge about how, when and why developers actually test, since this knowledge can be used to determine whether the used testing practices could be one reason for the observed bug proneness of software in practice. 
+
+This paper wants to gain a better understanding of the actual testing practices and questions the common expectations and beliefs about software testing. Since this study was done in a large and varied population of software engineers in the real world, the findings can be used to form a new basis for further researches and practitioners: 
+
+* Further researches can build their contributions on the findings in this paper instead of on the common expectations and beliefs. By doing so, they can make their findings more valid. 
+* Software Engineers can use the findings to change their testing behaviour. When they are aware that they overestimate their testing time, they might start to put more effort to perform tests, which might lead to better software quality.
+
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
