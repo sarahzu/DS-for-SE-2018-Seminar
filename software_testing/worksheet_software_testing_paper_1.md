@@ -37,7 +37,7 @@ As mentioned in question 3, they used data collected from 416 software engineers
 
 _Participants_: 
 They attracted study participants using various methods: For example, they provided a high-profile project website, offered razzle prizes, delivered useful WatchDog functionalities such as feedback on development behaviour, wrote articles and blogs and gave presentations at conferences. The participants were most likely interested in testing because the researchers tried to put emphasis on the testing focus of the plugin to attract developers during the participant acquisition.
-* Country: The considered participants came from 68 different countries. The most of them were from the United States (25%).
+* Country: The participants came from 68 different countries. The most of them were from the United States (25%).
 * Operating System: 75% of the participants use Windows, 14% MacOS and 11% Linux.
 * Programming experience: 60% users had less experience than 3 years. 20% were very experienced developers with more than or equal to 7 years of experience.
 
