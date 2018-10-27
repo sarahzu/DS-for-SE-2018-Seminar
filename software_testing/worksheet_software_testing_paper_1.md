@@ -5,11 +5,11 @@
 1. What is the **main research question/goal**?
 
 The main goal is to study how developers test in their IDE and to identify the habits of how developers drive software development with testing.  To understand the testing patterns the researchers compared the _state of the practice_ to the _state of the art_ of testing and tried to answer the following research questions:
-1) _When and Why Do Developers Test?_
-2) _How and Why Do Developers Run Tests?_
-3) _How Do Developers React to Test Runs?_
-4) _Do Developers Follow Test-Driven Development (TDD)?_
-5) _How Much Do Developers Test?_
+RQ1: _When and Why Do Developers Test?_
+RQ2: _How and Why Do Developers Run Tests?_
+RQ3: _How Do Developers React to Test Runs?_
+RQ4: _Do Developers Follow Test-Driven Development (TDD)?_
+RQ5: _How Much Do Developers Test?_
 
 
 2. Why is this paper **important**?
