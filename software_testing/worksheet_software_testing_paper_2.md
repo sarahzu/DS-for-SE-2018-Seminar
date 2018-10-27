@@ -11,7 +11,9 @@ The author’s hypothesis waw, that test smells provide a useful information sou
 To investigate their hypothesis, they defined the following research questions:
 
 RQ1: What causes flaky tests?
+
 RQ2: How well can flaky tests be explained when test smells are present?
+
 RQ3: How well can refactoring the test smells help to remove flakiness?
 
 2. Why is this paper **important**?
