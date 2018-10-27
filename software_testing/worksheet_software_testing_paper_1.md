@@ -24,11 +24,12 @@ This paper wants to gain a better understanding of the actual testing practices 
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
-In order to answer the research questions, they study the testing behaviour of 416 participants in a longitudinal, large-scale field study that has run for five months. The investigation focused on tests that are done inside the IDE by the developer. To extract developer’s activity, they used low-inference observation instruments that are installed within their Eclipse IDE. 
+In order to answer the research questions, they study the testing behaviour of 416 participants in a longitudinal, large-scale field study that has run for five months. The investigation focused on tests that are done inside the IDE by the developer. To extract developer’s activity, they used low-inference observation instruments that are installed within their Eclipse IDE. They divided each research question into subquestions and analyzed the collected data to answer them.
 
 Additionally, they used a mixed-methods approach to compare the results from the automated monitoring of developers with WatchDog to the subjective answers in surveys.
 
 For the research question 4 they applied the Beck’s definition of Test-Driven development (TDD) to the interval concept they used with WatchDog. With that, they provided a verifiable definition of TDD in practice: Newly created non-finite automatons made it possible to recognize the usage of TDD. They were converted to equivalent regular expressions which were then used to match against observed sequences of intervals to check a developer’s adherence to TDD.
+
 
 
 4. What **data** does the paper use?
@@ -52,8 +53,9 @@ To collect initial data about the participants, they made them fill out a short 
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
 For each test made in this study they firstly checked the distribution of the used data by performing a Shapiro-Wilk Normality test.  They performed non-parametric tests to investigate their research questions, because all distributions significantly deviated from a normal distribution according to the Shapiro-Wilk Normality tests.
-* Wilcoxon Rank Sum test: Done in order to check whether there is a significant statistical difference between two distributions.
-* Spearman rank-order correlation: Performed for correlation analyses.
+* Wilcoxon Rank Sum test: Done in order to check whether there is a significant statistical difference between two distributions. They used this test to compare the percentage of time spent in reading test and the percentage of time in reading production code for each project. 
+* Spearman rank-order correlation: Performed for all correlation analyses in this study. This correlation analysis can only be used to check the correlation and does not say anything about causation. To answer the research question 1, they correlated the amount of changed code with the number of test executions. With this analysis they can show whether developers test more often when they change a lot of test code. For the research question 2 they correlated the length of test execution with the number of times developer executed tests in order to answer the question whether quick tests lead to more test executions.
+
 
 6. What are the **limitations** of using this methodology on the results?
 
