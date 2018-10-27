@@ -24,6 +24,12 @@ This paper wants to gain a better understanding of the actual testing practices 
 
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
+In order to answer the research questions, they study the testing behaviour of 416 participants in a longitudinal, large-scale field study that has run for five months. The investigation focused on tests that are done inside the IDE by the developer. To extract developer’s activity, they used low-inference observation instruments that are installed within their Eclipse IDE. 
+
+Additionally, they used a mixed-methods approach to compare the results from the automated monitoring of developers with WatchDog to the subjective answers in surveys.
+
+For the research question 4 they applied the Beck’s definition of Test-Driven development (TDD) to the interval concept they used with WatchDog. With that, they provided a verifiable definition of TDD in practice: Newly created non-finite automatons made it possible to recognize the usage of TDD. They were converted to equivalent regular expressions which were then used to match against observed sequences of intervals to check a developer’s adherence to TDD.
+
 
 4. What **data** does the paper use?
 
