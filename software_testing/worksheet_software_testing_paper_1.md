@@ -74,3 +74,5 @@ This paper not only concludes with these results, but also present suggestions/i
 
 8. What did you **not understand** of this paper?
 
+The paper explained the data collection and the analysis very well, so everything presented in the paper was easy to understand. However, one point that confused us was that they mentioned several times to have used data that has been collected in a period of five months, however, they also mention that they report on data they received from November 1st 2014 to March 1st 2015, which is only 4 months. 
+
