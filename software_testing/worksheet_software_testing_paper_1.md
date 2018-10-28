@@ -59,7 +59,7 @@ Another limitation is that WatchDog is an Eclipse plugin. So, they only analysed
 
 Further threats to the external validity are the participant characteristics and the selection bias: Most of the participants (75%) were windows users. We believe, that this variable could and should have been better controlled in this study. Additionally, the participants were most likely interested in testing because the researchers put emphasis on the testing focus of the plugin to attract the developers. We think that it is possible that other developers might even test less because they are not as interested in testing as the participants.
 
-One of the biggest issues, we believe, is the Hawthorne effect, which was mentioned in the paper. The participants know that their testing behaviour is being observed, so they probably changed their behaviour because of that knowledge. We think that the participants tested more than they would do when not being observed.
+Another big issue, we believe, is the Hawthorne effect, which was also mentioned in the paper. The participants know that their testing behaviour is being observed, so they probably changed their behaviour because of that knowledge. We think that the participants tested more during the data collection than they would do when not being observed.
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
