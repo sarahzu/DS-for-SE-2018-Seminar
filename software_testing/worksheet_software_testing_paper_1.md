@@ -63,6 +63,14 @@ Another big issue, we believe, is the Hawthorne effect, which was also mentioned
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
+They provided answers for each research question:
+* RQ1: They found that most projects (57%) do not work with tests and that even the projects with tests execute them very rarely. Also, the correlation analysis showed that there is a correlation between the amount of changed code and the number of test executions.
+* RQ2: The collected data show that most test executions are very short. Additionally, they found that most of the test executions (87%) contain only one test case which suggests that developers might practice test selection.
+* RQ3: The results show that the majority (65%) of the test executions fail. Because of that, they also investigated how developers react to a failing test. The two most immediate reaction was diving into the production code and switching to another window (away from Eclipse). They also showed that test repairs are fast: 50% of test failures were fixed within 10 minutes.
+* RQ4: They found that TDD is not widely practiced. Most of the people who claimed to practice it, did not do so in reality.
+* RQ5: The answer for this research question was quite surprising: In reality developers spend only a quarter of their time engineering tests in the IDE. However, they believed that they spend about 50% of the time. 
+
+This paper not only concludes with these results, but also present suggestions/implications for software engineers, IDE creators and researchers in the future which can help to produce better software quality. Developers should be aware of how little they test. IDE creators should design IDEs that better support developers with testing by for example integrating reminders to execute tests, automatic test-selection and remote testing on the build server. Researchers should consider that developers’ survey answers do not have to match with their behaviour in practice and that student data differ significantly from real-world observations.
 
 8. What did you **not understand** of this paper?
 
