@@ -11,7 +11,6 @@ RQ3: _How Do Developers React to Test Runs?_
 RQ4: _Do Developers Follow Test-Driven Development (TDD)?_
 RQ5: _How Much Do Developers Test?_
 
-
 2. Why is this paper **important**?
 
 It is substantial to gain knowledge about how, when and why developers actually test, since this knowledge can be used to determine whether the used testing practices could be one reason for the observed bug proneness of software in practice. 
@@ -21,7 +20,6 @@ This paper wants to gain a better understanding of the actual testing practices 
 * Further researches can build their contributions on the findings in this paper instead of on the common expectations and beliefs. By doing so, they can make their findings more valid. 
 * Software Engineers can use the findings to change their testing behaviour. When they are aware that they overestimate their testing time, they might start to put more effort to perform tests, which might lead to better software quality.
 
-
 3. What is the **methodology** used to answer the research question(s) or reach the goal?
 
 In order to answer the research questions, they study the testing behaviour of 416 participants in a longitudinal, large-scale field study that has run for five months. The investigation focused on tests that are done inside the IDE by the developer. To extract developer’s activity, they used low-inference observation instruments that are installed within their Eclipse IDE. They divided each research question into subquestions and analyzed the collected data to answer them.
@@ -29,8 +27,6 @@ In order to answer the research questions, they study the testing behaviour of 4
 Additionally, they used a mixed-methods approach to compare the results from the automated monitoring of developers with WatchDog to the subjective answers in surveys.
 
 For the research question 4 they applied the Beck’s definition of Test-Driven development (TDD) to the interval concept they used with WatchDog. With that, they provided a verifiable definition of TDD in practice: Newly created non-finite automatons made it possible to recognize the usage of TDD. They were converted to equivalent regular expressions which were then used to match against observed sequences of intervals to check a developer’s adherence to TDD.
-
-
 
 4. What **data** does the paper use?
 
@@ -49,16 +45,21 @@ Using listeners for UI events related to programming behaviour and testing, they
 _Survey Data_: 
 To collect initial data about the participants, they made them fill out a short survey when they registered as a user for WatchDog. This survey collected data about the participants programming expertise, their beliefs about their testing behaviour and which testing frameworks they employ. 
 
-
 5. If there is a **statistical model**, what is the product, behavior, or process being modeled? What are the key characteristics of the model?
 
 For each test made in this study they firstly checked the distribution of the used data by performing a Shapiro-Wilk Normality test.  They performed non-parametric tests to investigate their research questions, because all distributions significantly deviated from a normal distribution according to the Shapiro-Wilk Normality tests.
 * Wilcoxon Rank Sum test: Done in order to check whether there is a significant statistical difference between two distributions. They used this test to compare the percentage of time spent in reading test and the percentage of time in reading production code for each project. 
 * Spearman rank-order correlation: Performed for all correlation analyses in this study. This correlation analysis can only be used to check the correlation and does not say anything about causation. To answer the research question 1, they correlated the amount of changed code with the number of test executions. With this analysis they can show whether developers test more often when they change a lot of test code. For the research question 2 they correlated the length of test execution with the number of times developer executed tests in order to answer the question whether quick tests lead to more test executions.
 
-
 6. What are the **limitations** of using this methodology on the results?
 
+They mentioned in the limitations section that they only consider everything that happens inside Eclipse. Works that are done outside the IDE were not recorded. However, they believe that this is no a big issue since they are interested in the ratio and not in the absolute time of work processes. They assume that the work outside the IDE happens in the same ratio as in the IDE. In our opinion, this might be a false assumption and the actual ratio might differ with ratio in the IDE. If for example, people do more testing outside the IDE (e.g. manual testing), the results of this study might not be valid.
+
+Another limitation is that WatchDog is an Eclipse plugin. So, they only analysed data from users that use the Eclipse IDE. Eclipse is mostly used for Java development. Perhaps other languages would have different results and its possible that other IDEs might better support testing. So, the findings of this study might actually only apply to Eclipse users and Java developers.
+
+Further threats to the external validity are the participant characteristics and the selection bias: Most of the participants (75%) were windows users. We believe, that this variable could and should have been better controlled in this study. Additionally, the participants were most likely interested in testing because the researchers put emphasis on the testing focus of the plugin to attract the developers. We think that it is possible that other developers might even test less because they are not as interested in testing as the participants.
+
+One of the biggest issues, we believe, is the Hawthorne effect, which was mentioned in the paper. The participants know that their testing behaviour is being observed, so they probably changed their behaviour because of that knowledge. We think that the participants tested more than they would do when not being observed.
 
 7. What is **the answer** to the research question? _(in case of a goal: What is the contribution of the paper towards that goal?)_
 
