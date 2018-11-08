@@ -1,4 +1,4 @@
-## Idea (Sarah)
+## Idea (Sarah)
 
 _3D visualizations Types (Alice and Sarah)_
 
