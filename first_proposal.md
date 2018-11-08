@@ -1,8 +1,7 @@
-# Idea (Sarah)
+## Idea (Sarah)
 
-## 3D visualizations Types (Alice and Sarah)
+_3D visualizations Types (Alice and Sarah)_
 
-# Importance (Alice)
+## Importance (Alice)
 
-
-# Literature (Sarah and Alice)
+## Literature (Sarah and Alice)
